@@ -33,4 +33,18 @@ public class FizzBuzzTest {
         assertEquals(expectedResult, result);
     }
 
+    @Test
+    void should_return_Buzz_when_count_off_given_order_number_multiple_of_5() {
+        //given
+        int order = 5;
+        String expectedResult = "Buzz";
+
+        // when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.countOff(order);
+
+        //then
+        assertEquals(expectedResult, result);
+    }
+
 }
