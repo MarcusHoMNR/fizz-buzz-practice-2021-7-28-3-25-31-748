@@ -16,6 +16,9 @@ public class FizzBuzz {
             }
             return FIZZ;
         } else if (order % 5 == 0) {
+            if (order % 7 == 0) {
+                return BUZZ + WHIZZ;
+            }
             return BUZZ;
         } else if (order % 7 == 0) {
             return WHIZZ;
